@@ -1,0 +1,44 @@
+{
+    "type": 0,
+    "code": "INVITE_ID",
+    "inviter": {
+        "id": "USER_ID",
+        "username": "USERNAME",
+        "avatar": "USER_AVATAR_LINK",
+        "discriminator": "0",
+        "public_flags": 0,
+        "flags": 0,
+        "banner": "USER_BANNER_LINK",
+        "accent_color": "None",
+        "global_name": "NICKNAME",
+        "avatar_decoration_data": "None",
+        "banner_color": "None",
+        "clan": "None"
+    },
+    "expires_at": "None",
+    "flags": 0,
+    "guild": {
+        "id": "GUILD_ID",
+        "name": "GUILD_NAME",
+        "splash": "SERVER_SPLASH_LINK",
+        "banner": "SERVER_BANNER_LINK",
+        "description": "GUILD_DESCRIPTION",
+        "icon": "SERVER_ICON_LINK",
+        "features": [
+            "FEATURES_GO_HERE"
+        ],
+        "verification_level": 0,
+        "vanity_url_code": "VANITY_URL",
+        "nsfw_level": 0,
+        "nsfw": false,
+        "premium_subscription_count": 0
+    },
+    "guild_id": "GUILD_ID",
+    "channel": {
+        "id": "CHANNEL_ID",
+        "type": 0,
+        "name": "CHANNEL_NAME"
+    },
+    "approximate_member_count": 0,
+    "approximate_presence_count": 0
+}
