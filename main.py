@@ -119,6 +119,13 @@ def construct_icon_url(guild_id, icon_hash):
         return "None"
 
 
+def construct_splash_url(guild_id, splash_hash):
+    if guild_id and splash_hash:
+        return f"https://cdn.discordapp.com/splashes/{guild_id}/{splash_hash}?size=1024"
+    else:
+        return "None"
+
+
 def main():
     target_active_invites = int(input("Enter the number of active invites you want to find: "))
     print(f"Searching for {target_active_invites} active Discord invites...")
@@ -152,9 +159,10 @@ def main():
                 invite_details["inviter"]["avatar"] = construct_avatar_url(inviter_id, invite_details["inviter"].get("avatar"))
                 invite_details["inviter"]["banner"] = construct_banner_url(inviter_id, invite_details["inviter"].get("banner"))
 
-                guild_id = invite_details["guild"]["id"]
+                guild_id = invite_details["guild"]["id"]  # Move this line up
                 invite_details["guild"]["icon"] = construct_icon_url(guild_id, invite_details["guild"].get("icon"))
                 invite_details["guild"]["banner"] = construct_banner_url(guild_id, invite_details["guild"].get("banner"))
+                invite_details["guild"]["splash"] = construct_splash_url(guild_id, invite_details["guild"].get("splash"))
 
                 invite_details["id"] = id_counter
                 detailed_active_invites.append(invite_details)
