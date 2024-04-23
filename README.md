@@ -32,6 +32,12 @@ It utilizes the Discord API to verify whether an invite is active or not and sav
 - Python 3.x
 - `requests` library
 
+<div align="center">
+
+# [Join my discord server](https://discord.gg/2nHHHBWNDw)
+
+</div>
+
 ## Usage
 
 1. Clone this repository to your local machine.
